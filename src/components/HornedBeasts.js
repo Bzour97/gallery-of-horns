@@ -11,8 +11,6 @@ class HornedBeasts extends React.Component {
     this.state = { timeOfClick: 0 };
   }
 
-  // Increase favorites
-
   timeClickIncrease = (event) => {
     this.setState({ timeOfClick: this.state.timeOfClick + 1 });
   }
@@ -38,7 +36,7 @@ class HornedBeasts extends React.Component {
         </Row>
             
       </div>
-      
+
     )
   }
 }
