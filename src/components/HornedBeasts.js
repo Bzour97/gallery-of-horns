@@ -17,7 +17,7 @@ class HornedBeasts extends React.Component {
   render() {
     return (
       <div>
-        <Row xs={1} md={2} className = "test">
+        <Row xs={1} md={2} className = "Test">
           {Array.from({ length: 1 }).map((_, idx) => (
             <Col>
               <Card>
