@@ -11,13 +11,15 @@ class HornedBeasts extends React.Component {
     this.state = { timeOfClick: 0 };
   }
 
+  // Increase favorites
+
   timeClickIncrease = (event) => {
     this.setState({ timeOfClick: this.state.timeOfClick + 1 });
   }
   render() {
     return (
       <div>
-        <Row xs={1} md={2} className = "Test">
+        <Row xs={1} md={2} className = "test">
           {Array.from({ length: 1 }).map((_, idx) => (
             <Col>
               <Card>
