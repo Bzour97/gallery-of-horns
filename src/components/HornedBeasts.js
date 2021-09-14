@@ -11,8 +11,12 @@ class HornedBeasts extends React.Component {
     this.state = { timeOfClick: 0 };
   }
 
-  timeClickIncrease = (event) => {
+  Click = (event) => {
+    event.preventDefault()
     this.setState({ timeOfClick: this.state.timeOfClick + 1 });
+    this.props.handleDisplay();
+    this.props.filterBeast(this.props.image_url);
+    console.log(this.props.image_url)
   }
 
   render() {
@@ -22,7 +26,7 @@ class HornedBeasts extends React.Component {
           {Array.from({ length: 1 }).map((_, idx) => (
             <Col>
               <Card>
-                <Card.Img variant = "Top" src = {this.props.image_url} onClick = {this.timeClickIncrease} width = '250'/>
+                <Card.Img variant="Top" src={this.props.image_url} onClick={this.Click} width = '250'/>
                 <Card.Body>
                   <Card.Title>{this.props.title}</Card.Title>
                   <Card.Text>
