@@ -3,7 +3,7 @@ import React from "react";
 class Footer extends React.Component{
     render(){
         return(
-            <h3> Doctor Ahmad Bzour Beek </h3>
+            <h1> Doctor Ahmad Bzour Beek ©️</h1>
         )
     }
 }
