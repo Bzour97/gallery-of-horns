@@ -7,13 +7,14 @@ class HornedBeasts extends React.Component {
 
   constructor(props) {
     super(props);
-    this.favorites = 'WoW';
+    this.favorites = '💓';
     this.state = { timeOfClick: 0 };
   }
 
   timeClickIncrease = (event) => {
     this.setState({ timeOfClick: this.state.timeOfClick + 1 });
   }
+
   render() {
     return (
       <div>
@@ -35,6 +36,7 @@ class HornedBeasts extends React.Component {
         </Row>
             
       </div>
+
     )
   }
 }
