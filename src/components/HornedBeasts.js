@@ -7,7 +7,7 @@ class HornedBeasts extends React.Component {
 
   constructor(props) {
     super(props);
-    this.favorites = 'WoW';
+    this.favorites = '💓';
     this.state = { timeOfClick: 0 };
   }
 
